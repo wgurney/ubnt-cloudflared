@@ -1,6 +1,5 @@
 no-autoupdate: true
 proxy-dns: true
 proxy-dns-upstream:
- - https://1.1.1.1/dns-query
- - https://1.0.0.1/dns-query
+ - https://ha2yhqlyv5.cloudflare-gateway.com/dns-query
 proxy-dns-port: 5053

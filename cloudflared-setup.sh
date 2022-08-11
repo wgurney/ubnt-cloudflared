@@ -5,7 +5,7 @@ source /opt/vyatta/etc/functions/script-template
 mkdir -p /etc/cloudflared
 mkdir -p /opt/cloudflared
 if [ ! -f /etc/cloudflared/config.yml ] || [ "$1" = "pull" ]; then
-	/usr/bin/curl -sf https://raw.githubusercontent.com/Twanislas/ubnt-cloudflared/master/config.yml --output /etc/cloudflared/config.yml
+	/usr/bin/curl -sf https://raw.githubusercontent.com/wgurney/ubnt-cloudflared/master/config.yml --output /etc/cloudflared/config.yml
 fi
 if [ ! -f /opt/cloudflared/cloudflared ] || [ "$1" = "pull" ]; then
 	sudo /usr/bin/curl -sf https://raw.githubusercontent.com/Twanislas/ubnt-cloudflared/master/cloudflared --output /opt/cloudflared/cloudflared
